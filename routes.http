@@ -1,0 +1,30 @@
+POST http://localhost:3333/celular
+Content-Type:application/json 
+
+{
+    "titulo": "Iphone NOVA GERAÇÃO",
+    "modelo": "Iphone 5",
+    "valor": "850"
+}
+
+###
+
+GET http://localhost:3333/celular
+
+###
+
+GET http://localhost:3333/celular?search=IFMS
+
+###
+
+PUT http://localhost:3333/celulares/f1526f10-60a3-429f-8ab5-af3cb61f2517
+Content-Type: application/json
+
+{
+    "titulo": "Iphone NOVA GERAÇÃO",
+    "modelo": "Iphone 11",
+    "valor": "1.050"
+}
+###
+DELETE http://localhost:3333/celulares/654adc2c-18b7-46f6-ad51-a5d94ff7437b
+
